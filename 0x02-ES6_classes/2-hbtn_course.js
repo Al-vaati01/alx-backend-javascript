@@ -18,9 +18,6 @@ export default class HolbertonCourse {
   }
 
   setName(newName) {
-    if (newName === '') {
-      return;
-    }
     this.name = newName;
   }
 
@@ -29,9 +26,6 @@ export default class HolbertonCourse {
   }
 
   setLength(newLength) {
-    if (newLength === '') {
-      return;
-    }
     this._length = newLength;
   }
 
@@ -40,9 +34,6 @@ export default class HolbertonCourse {
   }
 
   setStudents(newStudents) {
-    if (newStudents === '') {
-      throw new Error('students is empty');
-    }
     this._students = newStudents;
   }
 }
