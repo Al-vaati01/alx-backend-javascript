@@ -1,6 +1,6 @@
 export const weakMap = new WeakMap();
 
-export function queryAPI(endpoint) {
+export default function queryAPI(endpoint) {
   let counter = weakMap.get(endpoint) || 0;
   counter += 1;
 
