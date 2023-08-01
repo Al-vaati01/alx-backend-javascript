@@ -1,5 +1,5 @@
 export default function getListStudents(){
-    return arr = [
+    return [
         {
             id:1,
             firstname:'Guillaume',
@@ -17,4 +17,3 @@ export default function getListStudents(){
         }
     ]
 }
-console.log(getListStudents())
