@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
-function displayMessage() {
-    process.stdout.write('Hello NodeJS!');
+function displayMessage(msg) {
+    process.stdout.write(msg);
 }
 
 module.exports = {displayMessage}
