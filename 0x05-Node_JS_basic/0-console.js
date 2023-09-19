@@ -8,4 +8,4 @@ const displayMessage = (msg) => {
     console.log(msg);
 };
 
-module.exports = {displayMessage};
+module.exports = displayMessage
