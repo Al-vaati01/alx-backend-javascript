@@ -27,8 +27,7 @@ function countStudents(fileName) {
         for (const title of fields) {
           titles.push(title);
         }
-      } else {
-        // Process data rows here
+      } else if (fields.length >= 4) {
         results.push(fields);
       }
 
@@ -45,7 +44,7 @@ function countStudents(fileName) {
     }
     console.log(`Number of students: ${results.length}`);
     console.log(`Number of students in CS: ${fieldofstudy.CS.total}. List: ${fieldofstudy.CS.list.join(', ')}`);
-    console.log(`Number of students in SWE: ${fieldofstudy.SWE.total}. List: ${fieldofstudy.SWE.list.join(', ')}`);
+    console.log(`Number of students in CS: ${fieldofstudy.SWE.total}. List: ${fieldofstudy.SWE.list.join(', ')}`);
   } catch (error) {
     // Throw an error or return an error message
     throw new Error('Cannot load the database');
