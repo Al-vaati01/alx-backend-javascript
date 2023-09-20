@@ -43,13 +43,11 @@ function countStudents(fileName) {
         fieldofstudy.CS.total += 1;
       }
     }
-
+    console.log('After!');
     console.log(`Number of students: ${results.length}`);
     console.log(`Number of students in CS: ${fieldofstudy.CS.total}. List: ${fieldofstudy.CS.list}`);
     console.log(`Number of students in SWE: ${fieldofstudy.SWE.total}. List: ${fieldofstudy.SWE.list}`);
-
-    // Return the count of students (excluding the header row)
-    return results.length;
+    console.log('Done!');
   } catch (error) {
     // Throw an error or return an error message
     throw new Error('Cannot load the database');
