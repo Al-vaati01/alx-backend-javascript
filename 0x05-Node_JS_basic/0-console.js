@@ -1,2 +1,2 @@
-const displayMessage = "Hello NodeJS!";
+const displayMessage = console.log("Hello NodeJS!");
 module.exports = displayMessage
