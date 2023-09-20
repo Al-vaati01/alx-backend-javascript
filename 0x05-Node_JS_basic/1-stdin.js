@@ -1,10 +1,10 @@
 #!/usr/bin/node
 
-process.stdout.write('Welcome to Holberton School, what is your name?\n');
+console.log('Welcome to Holberton School, what is your name?');
 
 process.stdin.on('data', (chunk) => {
   const name = chunk.toString().trim();
-  process.stdout.write(`Your name is: ${name}\n`);
+  console.log(`Your name is: ${name}`);
 });
 
 process.stdin.on('end', () => {
