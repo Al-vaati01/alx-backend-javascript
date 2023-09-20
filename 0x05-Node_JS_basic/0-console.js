@@ -4,5 +4,7 @@
  * @param {String} msg The message to display.
  * @author Alvin
  */
-const displayMessage = (msg)=>console.log(msg);
+const displayMessage = (msg) => {
+    console.log(msg);
+};
 module.exports = displayMessage;
