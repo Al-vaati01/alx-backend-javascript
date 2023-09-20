@@ -43,11 +43,9 @@ function countStudents(fileName) {
         fieldofstudy.CS.total += 1;
       }
     }
-    console.log('After!');
     console.log(`Number of students: ${results.length}`);
-    console.log(`Number of students in CS: ${fieldofstudy.CS.total}. List: ${fieldofstudy.CS.list}`);
-    console.log(`Number of students in SWE: ${fieldofstudy.SWE.total}. List: ${fieldofstudy.SWE.list}`);
-    console.log('Done!');
+    console.log(`Number of students in CS: ${fieldofstudy.CS.total}. List: ${fieldofstudy.CS.list.join(', ')}`);
+    console.log(`Number of students in SWE: ${fieldofstudy.SWE.total}. List: ${fieldofstudy.SWE.list.join(', ')}`);
   } catch (error) {
     // Throw an error or return an error message
     throw new Error('Cannot load the database');
