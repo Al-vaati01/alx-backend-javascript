@@ -17,3 +17,4 @@ app.on('request', (_, res) => {
 app.listen(PORT, HOST, () => {
   process.stdout.write(`Server listening on Port: ${PORT} in ${HOST}`);
 });
+module.exports = app;
